@@ -21,7 +21,9 @@ _Clone this repository_
 _Open the project in Xcode_
 
 ```
-Dependencies ?
+Dependencies 
+ - sudo gem install cocoapods
+ - pod install
 ```
 ### Icon Made with
 https://www.appicon.build/
