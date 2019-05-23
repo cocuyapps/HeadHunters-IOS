@@ -23,8 +23,11 @@ _Open the project in Xcode_
 ```
 Dependencies ?
 ```
-# Icon Made with
+### Icon Made with
 https://www.appicon.build/
+
+### Our Mantra
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
 ## Deployment 📦
 
