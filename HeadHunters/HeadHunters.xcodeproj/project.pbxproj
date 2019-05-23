@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4383A32297450600B327C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4383A22297450600B327C1 /* GoogleService-Info.plist */; };
 		AF67D86E229344260082C84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86D229344260082C84F /* AppDelegate.swift */; };
 		AF67D870229344260082C84F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86F229344260082C84F /* ViewController.swift */; };
 		AF67D873229344260082C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D871229344260082C84F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F4383A22297450600B327C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF67D86A229344260082C84F /* HeadHunters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHunters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF67D86D229344260082C84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF67D86F229344260082C84F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				AF67D871229344260082C84F /* Main.storyboard */,
 				AF67D877229344270082C84F /* Assets.xcassets */,
 				AF67D879229344270082C84F /* LaunchScreen.storyboard */,
+				7F4383A22297450600B327C1 /* GoogleService-Info.plist */,
 				AF67D87C229344270082C84F /* Info.plist */,
 				AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */,
 			);
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF67D87B229344270082C84F /* LaunchScreen.storyboard in Resources */,
+				7F4383A32297450600B327C1 /* GoogleService-Info.plist in Resources */,
 				AF67D878229344270082C84F /* Assets.xcassets in Resources */,
 				AF67D873229344260082C84F /* Main.storyboard in Resources */,
 			);
