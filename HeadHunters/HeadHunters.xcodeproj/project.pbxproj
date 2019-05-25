@@ -11,6 +11,7 @@
 		7F4383A32297450600B327C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4383A22297450600B327C1 /* GoogleService-Info.plist */; };
 		AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */; };
 		AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */; };
+		AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */; };
 		AF67D86E229344260082C84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86D229344260082C84F /* AppDelegate.swift */; };
 		AF67D870229344260082C84F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86F229344260082C84F /* ViewController.swift */; };
 		AF67D873229344260082C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D871229344260082C84F /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		AB353FA2AC144ECD4585827F /* Pods-HeadHunters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadHunters.release.xcconfig"; path = "Target Support Files/Pods-HeadHunters/Pods-HeadHunters.release.xcconfig"; sourceTree = "<group>"; };
 		AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = SOURCE_ROOT; };
 		AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHuntersApi.swift; sourceTree = SOURCE_ROOT; };
+		AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHundredViewController.swift; sourceTree = "<group>"; };
 		AF67D86A229344260082C84F /* HeadHunters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHunters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF67D86D229344260082C84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF67D86F229344260082C84F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				AF67D86F229344260082C84F /* ViewController.swift */,
+				AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				AFF5C3CC2299E13B00029F6C /* Song.swift in Sources */,
 				AFF5C3C82299E10D00029F6C /* UserProfile.swift in Sources */,
 				AF67D876229344260082C84F /* HeadHunters.xcdatamodeld in Sources */,
+				AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */,
 				AF67D870229344260082C84F /* ViewController.swift in Sources */,
 				AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */,
 				AF67D86E229344260082C84F /* AppDelegate.swift in Sources */,
