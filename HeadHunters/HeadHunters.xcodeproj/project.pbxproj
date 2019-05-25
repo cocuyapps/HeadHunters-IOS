@@ -39,6 +39,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F6D8FDE2299D679005674F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7F6D8FDF2299D6B6005674F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F6D8FE02299D6D2005674F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF67D879229344270082C84F /* LaunchScreen.storyboard */,
+				AF67D877229344270082C84F /* Assets.xcassets */,
+				AF67D871229344260082C84F /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F6D8FE12299D711005674F1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF67D86D229344260082C84F /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F6D8FE22299D742005674F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF67D86F229344260082C84F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AF67D861229344260082C84F = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +98,11 @@
 		AF67D86C229344260082C84F /* HeadHunters */ = {
 			isa = PBXGroup;
 			children = (
-				AF67D86D229344260082C84F /* AppDelegate.swift */,
-				AF67D86F229344260082C84F /* ViewController.swift */,
-				AF67D871229344260082C84F /* Main.storyboard */,
-				AF67D877229344270082C84F /* Assets.xcassets */,
-				AF67D879229344270082C84F /* LaunchScreen.storyboard */,
+				7F6D8FE22299D742005674F1 /* ViewControllers */,
+				7F6D8FE12299D711005674F1 /* Main */,
+				7F6D8FE02299D6D2005674F1 /* Resources */,
+				7F6D8FDF2299D6B6005674F1 /* Models */,
+				7F6D8FDE2299D679005674F1 /* Network */,
 				7F4383A22297450600B327C1 /* GoogleService-Info.plist */,
 				AF67D87C229344270082C84F /* Info.plist */,
 				AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */,
