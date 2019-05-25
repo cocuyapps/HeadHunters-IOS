@@ -31,6 +31,9 @@ https://www.appicon.build/
 ### Our Mantra
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
 
+### Pivotal Tracker and gitflow short tutorial
+https://www.youtube.com/watch?v=J9xwJCm82tE
+
 ## Deployment 📦
 
 _Not yet_
