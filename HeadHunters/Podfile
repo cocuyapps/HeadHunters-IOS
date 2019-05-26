@@ -9,4 +9,6 @@ target 'HeadHunters' do
     pod 'SwiftyJSON'
     pod 'Alamofire'
     pod 'SVProgressHUD'
+    pod 'Firebase/Auth'
+
 end
