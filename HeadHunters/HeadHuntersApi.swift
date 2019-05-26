@@ -51,7 +51,7 @@ class HeadHuntersApi {
     
     static func getAlbums(responseHandler: @escaping ((AlbumsResponse) -> Void),
                           errorHandler: @escaping ((Error) -> Void), genre: String) {
-        let parameters = ["genres" : genre]
+        let parameters = ["genre" : genre]
         self.get(from: albumsUrlString, parameters: parameters,
                  responseType: AlbumsResponse.self,
                  responseHandler: responseHandler, errorHandler: errorHandler)
