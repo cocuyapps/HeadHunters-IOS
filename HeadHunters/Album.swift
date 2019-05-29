@@ -13,7 +13,7 @@ struct Album: Codable {
     var artist: String?
     var url: String?
     var thumbnail_image: String?
-    var image: String
+    var image: String?
     var songs: Array<Song>?
     var genre: String?
     var likes: Int?

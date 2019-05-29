@@ -16,7 +16,7 @@ class TopHundredViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         HeadHuntersApi.getAlbums(responseHandler: handleResponse, errorHandler: handleError, genre: "Rock")
-        HeadHuntersApi.getGenres(responseHandler: handleResponse, errorHandler: handleError)
+        //HeadHuntersApi.getGenres(responseHandler: handleResponse, errorHandler: handleError)
     }
 
     func handleResponse(response: AlbumsResponse) {
@@ -25,10 +25,13 @@ class TopHundredViewController: UIViewController {
             return
         }
         self.albums = albums
+        print(self.albums)
+        print("YES")
     }
     
     func handleError(error: Error) {
         let message = "Error while requesting Albums: \(error.localizedDescription)"
         os_log("%@", message)
+        print("ERRORAZO")
     }
 }

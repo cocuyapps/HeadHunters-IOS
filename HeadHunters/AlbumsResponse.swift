@@ -9,9 +9,5 @@
 import Foundation
 
 struct AlbumsResponse: Codable {
-    var status: String
-    var code: String?
-    var message: String?
-    var totalResults: Int?
     var albums: [Album]?
 }
