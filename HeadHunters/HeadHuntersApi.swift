@@ -32,8 +32,6 @@ class HeadHuntersApi {
                 switch response.result {
                 case .success( _):
                     do {
-                        var res: JSON = JSON(response.result.value!)
-                        print(res)
                         let decoder = JSONDecoder()
                         if let data = response.data {
                             let dataResponse = try decoder.decode(responseType, from: data)
