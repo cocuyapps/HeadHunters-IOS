@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		737A41C4AD8FB2CD16C5356F /* Pods_HeadHunters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2FCB8035C047B029E4EA68 /* Pods_HeadHunters.framework */; };
-		7F4383A32297450600B327C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4383A22297450600B327C1 /* GoogleService-Info.plist */; };
+		7F14337922A3122600AFA84D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F14337822A3122600AFA84D /* GoogleService-Info.plist */; };
 		AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */; };
 		AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */; };
 		AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */; };
@@ -26,7 +26,8 @@
 /* Begin PBXFileReference section */
 		1B2FCB8035C047B029E4EA68 /* Pods_HeadHunters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadHunters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4DA227E115E20732C3750C /* Pods-HeadHunters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadHunters.debug.xcconfig"; path = "Target Support Files/Pods-HeadHunters/Pods-HeadHunters.debug.xcconfig"; sourceTree = "<group>"; };
-		7F4383A22297450600B327C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F14337822A3122600AFA84D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F14337A22A3122900AFA84D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Network/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB353FA2AC144ECD4585827F /* Pods-HeadHunters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadHunters.release.xcconfig"; path = "Target Support Files/Pods-HeadHunters/Pods-HeadHunters.release.xcconfig"; sourceTree = "<group>"; };
 		AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = SOURCE_ROOT; };
 		AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHuntersApi.swift; sourceTree = SOURCE_ROOT; };
@@ -131,13 +132,14 @@
 		AF67D86C229344260082C84F /* HeadHunters */ = {
 			isa = PBXGroup;
 			children = (
+				7F14337822A3122600AFA84D /* GoogleService-Info.plist */,
 				7F6D8FE22299D742005674F1 /* ViewControllers */,
 				7F6D8FE12299D711005674F1 /* Main */,
 				7F6D8FE02299D6D2005674F1 /* Resources */,
 				7F6D8FDF2299D6B6005674F1 /* Models */,
 				7F6D8FDE2299D679005674F1 /* Network */,
-				7F4383A22297450600B327C1 /* GoogleService-Info.plist */,
 				AF67D87C229344270082C84F /* Info.plist */,
+				7F14337A22A3122900AFA84D /* GoogleService-Info.plist */,
 				AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */,
 			);
 			path = HeadHunters;
@@ -164,6 +166,7 @@
 				AF67D867229344260082C84F /* Frameworks */,
 				AF67D868229344260082C84F /* Resources */,
 				39D676DCD1F1C943B3DFE539 /* [CP] Embed Pods Frameworks */,
+				E8C508625AA539BBA7B70BA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF67D87B229344270082C84F /* LaunchScreen.storyboard in Resources */,
-				7F4383A32297450600B327C1 /* GoogleService-Info.plist in Resources */,
+				7F14337922A3122600AFA84D /* GoogleService-Info.plist in Resources */,
 				AF67D878229344270082C84F /* Assets.xcassets in Resources */,
 				AF67D873229344260082C84F /* Main.storyboard in Resources */,
 			);
@@ -229,20 +232,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,6 +263,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C508625AA539BBA7B70BA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HeadHunters/Pods-HeadHunters-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
