@@ -27,7 +27,10 @@ class LogInViewController: UIViewController {
             Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
                 if error == nil {
                     print("sin errores")
-                    self.performSegue(withIdentifier: "GoHome", sender: self)
+                    //self.performSegue(withIdentifier: "GoHome", sender: self)
+                    if let level2 = self.storyboard!.instantiateViewController(withIdentifier: "Home") as? UITabBarController{
+                        self.present(level2, animated: true, completion: nil)
+                    }
                 }
                 else{
                     print("con errores")

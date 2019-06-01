@@ -26,7 +26,9 @@ class SignUpViewController: UIViewController {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in
                 if error == nil {
                     print("sin errores")
-                    self.performSegue(withIdentifier: "goWelcome", sender: self)
+                    if let level0 = self.storyboard!.instantiateViewController(withIdentifier: "LogIn") as? UIViewController{
+                        self.present(level0, animated: true, completion: nil)
+                    }
                 }
                 else{
                     print("con errores")
