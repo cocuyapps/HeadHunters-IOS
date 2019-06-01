@@ -12,12 +12,15 @@
 		AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */; };
 		AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */; };
 		AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */; };
+		AF21849E22A331D800D7C673 /* HeadHunters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF21849C22A331D800D7C673 /* HeadHunters.xcdatamodeld */; };
 		AF67D86E229344260082C84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86D229344260082C84F /* AppDelegate.swift */; };
 		AF67D870229344260082C84F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF67D86F229344260082C84F /* ViewController.swift */; };
 		AF67D873229344260082C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D871229344260082C84F /* Main.storyboard */; };
-		AF67D876229344260082C84F /* HeadHunters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */; };
 		AF67D878229344270082C84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF67D877229344270082C84F /* Assets.xcassets */; };
 		AF67D87B229344270082C84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D879229344270082C84F /* LaunchScreen.storyboard */; };
+		AF96B0D522A314A20033BA67 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */; };
+		AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */; };
+		AF96B0D922A316660033BA67 /* FavoritesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D822A316660033BA67 /* FavoritesEntity.swift */; };
 		AFF5C3C82299E10D00029F6C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3C72299E10D00029F6C /* UserProfile.swift */; };
 		AFF5C3CA2299E12F00029F6C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3C92299E12F00029F6C /* Album.swift */; };
 		AFF5C3CC2299E13B00029F6C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3CB2299E13B00029F6C /* Song.swift */; };
@@ -31,14 +34,17 @@
 		AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = SOURCE_ROOT; };
 		AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHuntersApi.swift; sourceTree = SOURCE_ROOT; };
 		AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHundredViewController.swift; sourceTree = "<group>"; };
+		AF21849D22A331D800D7C673 /* HeadHunters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadHunters.xcdatamodel; sourceTree = "<group>"; };
 		AF67D86A229344260082C84F /* HeadHunters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHunters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF67D86D229344260082C84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF67D86F229344260082C84F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF67D872229344260082C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF67D875229344260082C84F /* HeadHunters.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeadHunters.xcdatamodel; sourceTree = "<group>"; };
 		AF67D877229344270082C84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF67D87A229344270082C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF67D87C229344270082C84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeadHuntersStore.swift; path = HeadHunters/ViewControllers/HeadHuntersStore.swift; sourceTree = SOURCE_ROOT; };
+		AF96B0D822A316660033BA67 /* FavoritesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesEntity.swift; path = HeadHunters/ViewControllers/FavoritesEntity.swift; sourceTree = SOURCE_ROOT; };
 		AFF5C3C72299E10D00029F6C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = SOURCE_ROOT; };
 		AFF5C3C92299E12F00029F6C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = SOURCE_ROOT; };
 		AFF5C3CB2299E13B00029F6C /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = SOURCE_ROOT; };
@@ -71,6 +77,8 @@
 				AFF5C3C72299E10D00029F6C /* UserProfile.swift */,
 				AFF5C3C92299E12F00029F6C /* Album.swift */,
 				AFF5C3CB2299E13B00029F6C /* Song.swift */,
+				AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */,
+				AF96B0D822A316660033BA67 /* FavoritesEntity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +89,7 @@
 				AF67D879229344270082C84F /* LaunchScreen.storyboard */,
 				AF67D877229344270082C84F /* Assets.xcassets */,
 				AF67D871229344260082C84F /* Main.storyboard */,
+				AF21849C22A331D800D7C673 /* HeadHunters.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -98,6 +107,7 @@
 			children = (
 				AF67D86F229344260082C84F /* ViewController.swift */,
 				AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */,
+				AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,7 +148,6 @@
 				7F6D8FDE2299D679005674F1 /* Network */,
 				7F4383A22297450600B327C1 /* GoogleService-Info.plist */,
 				AF67D87C229344270082C84F /* Info.plist */,
-				AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */,
 			);
 			path = HeadHunters;
 			sourceTree = "<group>";
@@ -278,15 +287,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF96B0D922A316660033BA67 /* FavoritesEntity.swift in Sources */,
+				AF96B0D522A314A20033BA67 /* UIImageViewExtension.swift in Sources */,
 				AFF5C3CC2299E13B00029F6C /* Song.swift in Sources */,
+				AF21849E22A331D800D7C673 /* HeadHunters.xcdatamodeld in Sources */,
 				AFF5C3C82299E10D00029F6C /* UserProfile.swift in Sources */,
-				AF67D876229344260082C84F /* HeadHunters.xcdatamodeld in Sources */,
 				AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */,
 				AF67D870229344260082C84F /* ViewController.swift in Sources */,
 				AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */,
 				AF67D86E229344260082C84F /* AppDelegate.swift in Sources */,
 				AFF5C3CA2299E12F00029F6C /* Album.swift in Sources */,
 				AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */,
+				AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,12 +502,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AF67D874229344260082C84F /* HeadHunters.xcdatamodeld */ = {
+		AF21849C22A331D800D7C673 /* HeadHunters.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AF67D875229344260082C84F /* HeadHunters.xcdatamodel */,
+				AF21849D22A331D800D7C673 /* HeadHunters.xcdatamodel */,
 			);
-			currentVersion = AF67D875229344260082C84F /* HeadHunters.xcdatamodel */;
+			currentVersion = AF21849D22A331D800D7C673 /* HeadHunters.xcdatamodel */;
 			path = HeadHunters.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

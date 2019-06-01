@@ -9,6 +9,7 @@
 import Foundation
 
 struct Album: Codable {
+    var id: String?
     var title: String?
     var artist: String?
     var url: String?
@@ -19,4 +20,13 @@ struct Album: Codable {
     var likes: Int?
     var description: String?
     var liked: Int?
+    
+    var isFavorite: Bool {
+        get {
+            return HeadHuntersStore.shared.isFavorite(album: self)
+        }
+        set {
+            HeadHuntersStore.shared.setFavorite(newValue, for: self)
+        }
+    }
 }
