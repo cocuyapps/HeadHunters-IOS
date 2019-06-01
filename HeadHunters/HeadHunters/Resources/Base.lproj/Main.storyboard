@@ -149,7 +149,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="cFl-T3-9cX" kind="show" id="0Mc-Vi-Xrj"/>
+                                            <action selector="logInAction:" destination="ZXq-YI-lfM" eventType="touchUpInside" id="eER-9P-qgO"/>
+                                            <segue destination="cFl-T3-9cX" kind="show" identifier="GoHome" id="0Mc-Vi-Xrj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-x1-Rjv">
@@ -263,7 +264,7 @@
                                 <state key="normal" title="Done!"/>
                                 <connections>
                                     <action selector="signUpAction:" destination="hKd-LE-M94" eventType="touchUpInside" id="MbN-9J-S1B"/>
-                                    <segue destination="cFl-T3-9cX" kind="show" identifier="GoHome" id="kDV-Vv-Ba7"/>
+                                    <segue destination="ZXq-YI-lfM" kind="show" identifier="goWelcome" id="uJN-b5-omy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -588,7 +589,4 @@
             <point key="canvasLocation" x="392.80000000000001" y="-2132.3838080959522"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="0Mc-Vi-Xrj"/>
-    </inferredMetricsTieBreakers>
 </document>
