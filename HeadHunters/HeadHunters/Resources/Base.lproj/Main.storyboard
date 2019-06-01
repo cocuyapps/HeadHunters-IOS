@@ -125,13 +125,13 @@
         <!--Welcome-->
         <scene sceneID="BxG-7j-8bz">
             <objects>
-                <viewController title="Welcome" id="ZXq-YI-lfM" sceneMemberID="viewController">
+                <viewController title="Welcome" id="ZXq-YI-lfM" customClass="LogInViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WT2-qj-yNJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-CB-tr8">
-                                <rect key="frame" x="20" y="180.5" width="81" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-CB-tr8">
+                                <rect key="frame" x="20" y="180.5" width="41" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your username here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHH-qO-gPl">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHH-qO-gPl">
                                 <rect key="frame" x="20" y="221" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -199,15 +199,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R50-a9-9NY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="fHH-qO-gPl" id="6yP-G7-0Cg"/>
+                        <outlet property="passwordTextField" destination="nGa-ZV-kAj" id="vv1-Fy-Xvd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riz-Di-51K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1951" y="-424"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="d9w-dj-p46">
             <objects>
-                <viewController id="hKd-LE-M94" sceneMemberID="viewController">
+                <viewController id="hKd-LE-M94" customClass="SignUpViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwz-ND-a01">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,13 +240,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYs-LV-wgf">
-                                <rect key="frame" x="20" y="180.5" width="45" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYs-LV-wgf">
+                                <rect key="frame" x="20" y="180.5" width="41" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-ew-bCa">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-ew-bCa">
                                 <rect key="frame" x="20" y="221" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -258,7 +262,8 @@
                                 <rect key="frame" x="167" y="492" width="41" height="30"/>
                                 <state key="normal" title="Done!"/>
                                 <connections>
-                                    <segue destination="cFl-T3-9cX" kind="show" id="kDV-Vv-Ba7"/>
+                                    <action selector="signUpAction:" destination="hKd-LE-M94" eventType="touchUpInside" id="MbN-9J-S1B"/>
+                                    <segue destination="cFl-T3-9cX" kind="show" identifier="GoHome" id="kDV-Vv-Ba7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -289,6 +294,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K0V-3K-84i"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="QdD-ew-bCa" id="ZTz-ad-u3D"/>
+                        <outlet property="passwordTextField" destination="z5N-2C-C3W" id="29z-uP-Eu1"/>
+                        <outlet property="userNameTextField" destination="lPK-Rd-awg" id="X0z-sX-00l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oul-qA-Vbi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
