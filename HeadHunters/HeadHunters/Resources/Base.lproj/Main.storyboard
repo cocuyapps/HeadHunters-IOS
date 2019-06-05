@@ -136,7 +136,7 @@
                                         <rect key="frame" x="85" y="0.0" width="54" height="30"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="hKd-LE-M94" kind="show" id="uRm-uh-M4D"/>
+                                            <segue destination="hKd-LE-M94" kind="show" id="cFN-Qe-h7D"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -249,7 +249,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="ZXq-YI-lfM" kind="show" id="4Vx-rO-XEP"/>
+                                            <segue destination="ZXq-YI-lfM" kind="show" id="xig-PN-Fqk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1j-qI-NOf">
@@ -296,7 +296,6 @@
                         <outlet property="emailTextField" destination="lPK-Rd-awg" id="6lf-Lj-KPB"/>
                         <outlet property="nameTextField" destination="QdD-ew-bCa" id="2ux-RQ-xSS"/>
                         <outlet property="passwordTextField" destination="z5N-2C-C3W" id="OBB-H1-BXh"/>
-                        <outlet property="userNameTextField" destination="QdD-ew-bCa" id="FUz-2I-15j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oul-qA-Vbi" userLabel="First Responder" sceneMemberID="firstResponder"/>

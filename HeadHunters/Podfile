@@ -11,4 +11,5 @@ target 'HeadHunters' do
     pod 'SVProgressHUD'
     pod 'Firebase/Core'
     pod 'FirebaseUI/Auth'
+    pod 'Firebase/Database'
 end
