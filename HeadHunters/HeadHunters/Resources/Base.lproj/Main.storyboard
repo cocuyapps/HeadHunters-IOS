@@ -105,7 +105,7 @@
         <!--Welcome-->
         <scene sceneID="BxG-7j-8bz">
             <objects>
-                <viewController storyboardIdentifier="LogIn" title="Welcome" id="ZXq-YI-lfM" customClass="LogInViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogIn" title="Welcome" id="ZXq-YI-lfM" customClass="LoginViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WT2-qj-yNJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +129,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <action selector="logInAction:" destination="ZXq-YI-lfM" eventType="touchUpInside" id="Uea-qK-8iH"/>
+                                            <action selector="logInAction:" destination="ZXq-YI-lfM" eventType="touchUpInside" id="JJM-Wf-bOx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-x1-Rjv">
@@ -184,8 +184,8 @@
                         <viewLayoutGuide key="safeArea" id="R50-a9-9NY"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="fHH-qO-gPl" id="jXh-p7-XKp"/>
-                        <outlet property="passwordTextField" destination="nGa-ZV-kAj" id="8Ee-yf-bFL"/>
+                        <outlet property="emailTextField" destination="fHH-qO-gPl" id="OhK-D4-sfC"/>
+                        <outlet property="passwordTextField" destination="nGa-ZV-kAj" id="3dB-1d-NAL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="riz-Di-51K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -256,7 +256,7 @@
                                         <rect key="frame" x="86" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Sign up"/>
                                         <connections>
-                                            <action selector="signUpAction:" destination="hKd-LE-M94" eventType="touchUpInside" id="vaj-5i-xnp"/>
+                                            <action selector="signUpAction:" destination="hKd-LE-M94" eventType="touchUpInside" id="8Ir-h8-rVN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -293,8 +293,9 @@
                         <viewLayoutGuide key="safeArea" id="K0V-3K-84i"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="lPK-Rd-awg" id="H95-1I-zyo"/>
-                        <outlet property="passwordTextField" destination="z5N-2C-C3W" id="Gww-v7-iEo"/>
+                        <outlet property="emailTextField" destination="lPK-Rd-awg" id="6lf-Lj-KPB"/>
+                        <outlet property="nameTextField" destination="QdD-ew-bCa" id="2ux-RQ-xSS"/>
+                        <outlet property="passwordTextField" destination="z5N-2C-C3W" id="OBB-H1-BXh"/>
                         <outlet property="userNameTextField" destination="QdD-ew-bCa" id="FUz-2I-15j"/>
                     </connections>
                 </viewController>

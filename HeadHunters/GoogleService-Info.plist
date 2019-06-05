@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>726184207586-1ked8ci3paii9ff3dorbeff2qpepa0nv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.726184207586-1ked8ci3paii9ff3dorbeff2qpepa0nv</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>726184207586-j19fmsfv972eut9udkj0krkgi03fmcvr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAc_EMl3SIiGkkWzuyQjweCiADWFTj6jyY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>726184207586</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pe.edu.cocuyapps.HeadHunters</string>
+	<key>PROJECT_ID</key>
+	<string>headhunters-7ca33</string>
+	<key>STORAGE_BUCKET</key>
+	<string>headhunters-7ca33.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:726184207586:ios:62c8404261f00d05</string>
+	<key>DATABASE_URL</key>
+	<string>https://headhunters-7ca33.firebaseio.com</string>
+</dict>
+</plist>
