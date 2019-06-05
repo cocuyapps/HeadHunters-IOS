@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		737A41C4AD8FB2CD16C5356F /* Pods_HeadHunters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2FCB8035C047B029E4EA68 /* Pods_HeadHunters.framework */; };
-		7F076AB122A3391400803C75 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F076AAF22A3391300803C75 /* SignUpViewController.swift */; };
-		7F076AB222A3391400803C75 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F076AB022A3391400803C75 /* LogInViewController.swift */; };
-		7F076AB422A33EF800803C75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F076AB322A33EF800803C75 /* GoogleService-Info.plist */; };
+		7FE02B5422A7439D00CEFD44 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FE02B5322A7439D00CEFD44 /* GoogleService-Info.plist */; };
+		7FE02B5622A743CD00CEFD44 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE02B5522A743CD00CEFD44 /* LoginViewController.swift */; };
+		7FE02B5822A743EC00CEFD44 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE02B5722A743EC00CEFD44 /* SignUpViewController.swift */; };
 		AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */; };
 		AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */; };
 		AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */; };
@@ -31,9 +31,9 @@
 /* Begin PBXFileReference section */
 		1B2FCB8035C047B029E4EA68 /* Pods_HeadHunters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeadHunters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4DA227E115E20732C3750C /* Pods-HeadHunters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadHunters.debug.xcconfig"; path = "Target Support Files/Pods-HeadHunters/Pods-HeadHunters.debug.xcconfig"; sourceTree = "<group>"; };
-		7F076AAF22A3391300803C75 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "../../../../../../Downloads/HeadHunters/HeadHunters-IOS/HeadHunters/HeadHunters/ViewControllers/SignUpViewController.swift"; sourceTree = "<group>"; };
-		7F076AB022A3391400803C75 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = "../../../../../../Downloads/HeadHunters/HeadHunters-IOS/HeadHunters/HeadHunters/ViewControllers/LogInViewController.swift"; sourceTree = "<group>"; };
-		7F076AB322A33EF800803C75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FE02B5322A7439D00CEFD44 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7FE02B5522A743CD00CEFD44 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7FE02B5722A743EC00CEFD44 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AB353FA2AC144ECD4585827F /* Pods-HeadHunters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeadHunters.release.xcconfig"; path = "Target Support Files/Pods-HeadHunters/Pods-HeadHunters.release.xcconfig"; sourceTree = "<group>"; };
 		AF1D30C3229A0ACF004E96A8 /* AlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsResponse.swift; sourceTree = SOURCE_ROOT; };
 		AF1D30C5229A0AF0004E96A8 /* HeadHuntersApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHuntersApi.swift; sourceTree = SOURCE_ROOT; };
@@ -111,9 +111,9 @@
 			children = (
 				AF67D86F229344260082C84F /* ViewController.swift */,
 				AF1D30C7229A0CA4004E96A8 /* TopHundredViewController.swift */,
-				7F076AB022A3391400803C75 /* LogInViewController.swift */,
-				7F076AAF22A3391300803C75 /* SignUpViewController.swift */,
 				AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */,
+				7FE02B5522A743CD00CEFD44 /* LoginViewController.swift */,
+				7FE02B5722A743EC00CEFD44 /* SignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 				7F6D8FDF2299D6B6005674F1 /* Models */,
 				7F6D8FDE2299D679005674F1 /* Network */,
 				AF67D87C229344270082C84F /* Info.plist */,
-				7F076AB322A33EF800803C75 /* GoogleService-Info.plist */,
+				7FE02B5322A7439D00CEFD44 /* GoogleService-Info.plist */,
 			);
 			path = HeadHunters;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF67D87B229344270082C84F /* LaunchScreen.storyboard in Resources */,
-				7F076AB422A33EF800803C75 /* GoogleService-Info.plist in Resources */,
+				7FE02B5422A7439D00CEFD44 /* GoogleService-Info.plist in Resources */,
 				AF67D878229344270082C84F /* Assets.xcassets in Resources */,
 				AF67D873229344260082C84F /* Main.storyboard in Resources */,
 			);
@@ -302,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE02B5622A743CD00CEFD44 /* LoginViewController.swift in Sources */,
 				AF96B0D922A316660033BA67 /* FavoritesEntity.swift in Sources */,
 				AF96B0D522A314A20033BA67 /* UIImageViewExtension.swift in Sources */,
 				AFF5C3CC2299E13B00029F6C /* Song.swift in Sources */,
@@ -309,12 +310,11 @@
 				AFF5C3C82299E10D00029F6C /* UserProfile.swift in Sources */,
 				AF1D30C8229A0CA4004E96A8 /* TopHundredViewController.swift in Sources */,
 				AF67D870229344260082C84F /* ViewController.swift in Sources */,
+				7FE02B5822A743EC00CEFD44 /* SignUpViewController.swift in Sources */,
 				AF1D30C6229A0AF0004E96A8 /* HeadHuntersApi.swift in Sources */,
 				AF67D86E229344260082C84F /* AppDelegate.swift in Sources */,
 				AFF5C3CA2299E12F00029F6C /* Album.swift in Sources */,
-				7F076AB222A3391400803C75 /* LogInViewController.swift in Sources */,
 				AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */,
-				7F076AB122A3391400803C75 /* SignUpViewController.swift in Sources */,
 				AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
