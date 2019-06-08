@@ -27,6 +27,7 @@ Dependencies
 ```
 ### Icon Made with
 https://www.appicon.build/
+https://appicon.co/
 
 ### Our Mantra
 https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
