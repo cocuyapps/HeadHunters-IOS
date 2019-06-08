@@ -72,4 +72,17 @@ class GenreViewController: UICollectionViewController {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAlbumsGenre" {
+            if let destination = segue.destination as? TopHundredViewControllerController {
+                destination.genre = genres[currentRow].genre!
+            }
+        }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentRow = indexPath.item
+        performSegue(withIdentifier: "showAlbumsGenre", sender: self)
+    }
 }
