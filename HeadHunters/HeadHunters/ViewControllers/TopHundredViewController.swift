@@ -41,6 +41,11 @@ class AlbumCell: UICollectionViewCell {
 
         favoriteImageView.setImage(fromAsset: "heartblank")
     }
+    
+    @IBAction func addToPlaylist(_ sender: UIButton) {
+        
+    }
+    
 }
 
 class TopHundredViewControllerController: UICollectionViewController {

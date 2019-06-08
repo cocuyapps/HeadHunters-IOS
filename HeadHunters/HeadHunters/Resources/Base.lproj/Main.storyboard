@@ -120,6 +120,9 @@
                                                 <constraint firstAttribute="width" constant="119" id="Ljx-6Y-3YP"/>
                                             </constraints>
                                             <state key="normal" title="Agregar a playlist"/>
+                                            <connections>
+                                                <action selector="addToPlaylist:" destination="8Rw-DA-wJB" eventType="touchUpInside" id="a6y-m7-m1D"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-zJ-aCe">
                                             <rect key="frame" x="223" y="209" width="50" height="48"/>
