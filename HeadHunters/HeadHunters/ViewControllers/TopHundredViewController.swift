@@ -39,7 +39,7 @@ class AlbumCell: UICollectionViewCell {
 
         albumLabel.text = album.title
 
-        favoriteImageView.setImage(fromAsset: "heartblack")
+        favoriteImageView.setImage(fromAsset: "heartblank")
     }
 }
 
@@ -99,15 +99,15 @@ class TopHundredViewControllerController: UICollectionViewController {
         return cell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showSource" {
-//            let destination = segue.destination as! SourceViewController
-//            destination.source = sources[currentRow]
-//        }
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        currentRow = indexPath.item
-//        performSegue(withIdentifier: "showAlbum", sender: self)
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAlbum" {
+            let destination = segue.destination as! AlbumDetailViewController
+            destination.album = albums[currentRow]
+        }
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentRow = indexPath.item
+        performSegue(withIdentifier: "showAlbum", sender: self)
+    }
 }

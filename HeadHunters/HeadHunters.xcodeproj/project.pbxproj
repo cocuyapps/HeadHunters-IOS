@@ -25,6 +25,7 @@
 		AF96B0D522A314A20033BA67 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */; };
 		AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */; };
 		AF96B0D922A316660033BA67 /* FavoritesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D822A316660033BA67 /* FavoritesEntity.swift */; };
+		AFB3B05A22AC536E0058A641 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3B05922AC536E0058A641 /* AlbumDetailViewController.swift */; };
 		AFF5C3C82299E10D00029F6C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3C72299E10D00029F6C /* UserProfile.swift */; };
 		AFF5C3CA2299E12F00029F6C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3C92299E12F00029F6C /* Album.swift */; };
 		AFF5C3CC2299E13B00029F6C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C3CB2299E13B00029F6C /* Song.swift */; };
@@ -53,6 +54,7 @@
 		AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeadHuntersStore.swift; path = HeadHunters/ViewControllers/HeadHuntersStore.swift; sourceTree = SOURCE_ROOT; };
 		AF96B0D822A316660033BA67 /* FavoritesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesEntity.swift; path = HeadHunters/ViewControllers/FavoritesEntity.swift; sourceTree = SOURCE_ROOT; };
+		AFB3B05922AC536E0058A641 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		AFF5C3C72299E10D00029F6C /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = SOURCE_ROOT; };
 		AFF5C3C92299E12F00029F6C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = SOURCE_ROOT; };
 		AFF5C3CB2299E13B00029F6C /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = SOURCE_ROOT; };
@@ -120,6 +122,7 @@
 				AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */,
 				7FE02B5522A743CD00CEFD44 /* LoginViewController.swift */,
 				7FE02B5722A743EC00CEFD44 /* SignUpViewController.swift */,
+				AFB3B05922AC536E0058A641 /* AlbumDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				AF67D86E229344260082C84F /* AppDelegate.swift in Sources */,
 				AFF5C3CA2299E12F00029F6C /* Album.swift in Sources */,
 				AF1D30C4229A0ACF004E96A8 /* AlbumsResponse.swift in Sources */,
+				AFB3B05A22AC536E0058A641 /* AlbumDetailViewController.swift in Sources */,
 				AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
