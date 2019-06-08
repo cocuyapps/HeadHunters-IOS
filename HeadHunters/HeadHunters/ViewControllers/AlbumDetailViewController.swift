@@ -25,6 +25,6 @@ class AlbumDetailViewController: UIViewController {
                                 withErrorImage: "no-image-available")
         titleLabel.text = album?.title
         artistLabel.text = album?.artist
-        descriptionLabel.text = album?.description
+        descriptionLabel.text = "Description: " + album!.description!
     }
 }
