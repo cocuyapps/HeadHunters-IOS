@@ -55,10 +55,10 @@ class HeadHuntersApi {
                  responseHandler: responseHandler, errorHandler: errorHandler)
     }
 
-    static func getGenres(responseHandler: @escaping ((AlbumsResponse) -> Void),
+    static func getGenres(responseHandler: @escaping ((GenreResponse) -> Void),
                           errorHandler: @escaping ((Error) -> Void)) {
         self.get(from: genresUrlString, parameters: ["":""],
-                 responseType: AlbumsResponse.self,
+                 responseType: GenreResponse.self,
                  responseHandler: responseHandler, errorHandler: errorHandler)
     }
 }

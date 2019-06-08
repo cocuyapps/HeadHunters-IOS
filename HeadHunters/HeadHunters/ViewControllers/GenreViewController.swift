@@ -9,12 +9,11 @@
 import UIKit
 import os
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "Genre Cell"
 
 class GenreCell: UICollectionViewCell {
     
     @IBOutlet weak var genreImageView: UIImageView!
-    
     @IBOutlet weak var genreLabel: UILabel!
     
     func update(from genre: Genre) {
@@ -33,7 +32,7 @@ class GenreViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
+        HeadHuntersApi.getGenres(responseHandler: handleResponse, errorHandler: handleError)
     }
     
     func handleResponse(response: GenreResponse){
@@ -68,7 +67,6 @@ class GenreViewController: UICollectionViewController {
         cell.clipsToBounds = false
         cell.layer.zPosition = 10
         cell.update(from: genres[indexPath.row])
-        
         
         return cell
     }
