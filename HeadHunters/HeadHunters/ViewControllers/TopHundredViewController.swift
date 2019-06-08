@@ -47,11 +47,12 @@ class TopHundredViewControllerController: UICollectionViewController {
     
     var albums: [Album] = [Album]()
     var currentRow = 0
+    var genre = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         HeadHuntersApi.getAlbums(responseHandler: handleResponse,
-                                 errorHandler: handleError, genre: "")
+                                 errorHandler: handleError, genre: genre)
     }
     
     override func viewWillAppear(_ animated: Bool) {

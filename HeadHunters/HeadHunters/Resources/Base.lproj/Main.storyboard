@@ -60,6 +60,9 @@
                         </cells>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Search by genre" id="t8q-ag-Vkt"/>
+                    <connections>
+                        <segue destination="pAV-72-9gN" kind="show" identifier="showAlbumsGenre" id="G16-dc-tlS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FD0-tn-gQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -794,4 +797,7 @@
             <point key="canvasLocation" x="392.80000000000001" y="-2132.3838080959522"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G16-dc-tlS"/>
+    </inferredMetricsTieBreakers>
 </document>
