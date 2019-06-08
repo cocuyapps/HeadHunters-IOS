@@ -15,12 +15,19 @@ class LoginViewController: UIViewController{
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    override func viewDidLoad() {
+        passwordTextField.isSecureTextEntry = true
+    }
     
     @IBAction func logInAction(_ sender: AnyObject) {
-        
+        //Loading animation starts
+        self.activityIndicator.startAnimating()
         if passwordTextField.text == "" && emailTextField.text == ""{
             print("esta vacio")
+            //Loading animation stops
+            self.activityIndicator.stopAnimating()
         }
         else{
             print("no esta vacio")
@@ -33,12 +40,15 @@ class LoginViewController: UIViewController{
                     //self.performSegue(withIdentifier: "GoHome", sender: self)
                     if let level2 = self.storyboard!.instantiateViewController(withIdentifier: "Home") as? UITabBarController{
                         self.present(level2, animated: true, completion: nil)
+                        //Loading animation stops
+                        self.activityIndicator.stopAnimating()
                     }
                 }
                 else{
                     print("con errores")
                     print(error?.localizedDescription ?? "firebase ta cagado")
-                    
+                    //Loading animation stops
+                    self.activityIndicator.stopAnimating()
                 }
                 
             }

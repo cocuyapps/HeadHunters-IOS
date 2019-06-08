@@ -348,6 +348,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-CA-AqB">
+                                <rect key="frame" x="177" y="352" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -356,11 +359,14 @@
                             <constraint firstItem="1DZ-lg-leT" firstAttribute="leading" secondItem="R50-a9-9NY" secondAttribute="leading" constant="20" id="5YA-oi-vhk"/>
                             <constraint firstItem="nGa-ZV-kAj" firstAttribute="top" secondItem="1DZ-lg-leT" secondAttribute="bottom" constant="20" id="6L6-c3-jH1"/>
                             <constraint firstItem="R50-a9-9NY" firstAttribute="trailing" secondItem="pid-Nu-xMd" secondAttribute="trailing" constant="118" id="6km-8q-3LD"/>
+                            <constraint firstItem="n2a-CA-AqB" firstAttribute="centerX" secondItem="pid-Nu-xMd" secondAttribute="centerX" id="OHX-Ws-yyR"/>
+                            <constraint firstItem="pid-Nu-xMd" firstAttribute="top" secondItem="n2a-CA-AqB" secondAttribute="bottom" constant="9" id="Pg9-FS-8fd"/>
                             <constraint firstItem="wyH-CB-tr8" firstAttribute="top" secondItem="I4x-Pm-Zg9" secondAttribute="bottom" constant="80" id="QFN-Ch-QeA"/>
                             <constraint firstItem="pid-Nu-xMd" firstAttribute="leading" secondItem="R50-a9-9NY" secondAttribute="leading" constant="118" id="TSI-ki-N4H"/>
                             <constraint firstItem="R50-a9-9NY" firstAttribute="trailing" secondItem="1DZ-lg-leT" secondAttribute="trailing" constant="280" id="Vxv-wb-5uF"/>
                             <constraint firstItem="I4x-Pm-Zg9" firstAttribute="leading" secondItem="WT2-qj-yNJ" secondAttribute="leading" id="X9Y-U2-rdd"/>
                             <constraint firstItem="1DZ-lg-leT" firstAttribute="leading" secondItem="nGa-ZV-kAj" secondAttribute="leading" id="aHg-eC-WP9"/>
+                            <constraint firstItem="n2a-CA-AqB" firstAttribute="leading" secondItem="R50-a9-9NY" secondAttribute="leading" constant="177" id="aOu-1z-TIU"/>
                             <constraint firstItem="I4x-Pm-Zg9" firstAttribute="top" secondItem="R50-a9-9NY" secondAttribute="top" constant="60" id="d7t-Jv-0ta"/>
                             <constraint firstItem="nGa-ZV-kAj" firstAttribute="leading" secondItem="R50-a9-9NY" secondAttribute="leading" constant="20" id="eAU-C0-URV"/>
                             <constraint firstItem="R50-a9-9NY" firstAttribute="trailing" secondItem="nGa-ZV-kAj" secondAttribute="trailing" constant="20" id="gyS-2r-ggv"/>
@@ -373,6 +379,7 @@
                         <viewLayoutGuide key="safeArea" id="R50-a9-9NY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="n2a-CA-AqB" id="vwO-jy-3Jf"/>
                         <outlet property="emailTextField" destination="fHH-qO-gPl" id="OhK-D4-sfC"/>
                         <outlet property="passwordTextField" destination="nGa-ZV-kAj" id="3dB-1d-NAL"/>
                     </connections>
@@ -450,6 +457,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4EI-kh-lCM">
+                                <rect key="frame" x="177" y="454" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -471,17 +481,21 @@
                             <constraint firstItem="3kF-Ga-bGx" firstAttribute="centerX" secondItem="jwz-ND-a01" secondAttribute="centerX" id="UmC-1z-dmq"/>
                             <constraint firstItem="f02-zp-CG1" firstAttribute="leading" secondItem="K0V-3K-84i" secondAttribute="leading" constant="20" id="V1s-zZ-Qeb"/>
                             <constraint firstItem="K0V-3K-84i" firstAttribute="trailing" secondItem="f02-zp-CG1" secondAttribute="trailing" constant="273" id="cMx-ia-wQJ"/>
+                            <constraint firstItem="4EI-kh-lCM" firstAttribute="centerX" secondItem="z5N-2C-C3W" secondAttribute="centerX" id="cV5-s1-TO1"/>
                             <constraint firstItem="z5N-2C-C3W" firstAttribute="leading" secondItem="K0V-3K-84i" secondAttribute="leading" constant="20" id="lSB-b8-jy7"/>
                             <constraint firstItem="uYs-LV-wgf" firstAttribute="leading" secondItem="K0V-3K-84i" secondAttribute="leading" constant="20" id="mmC-xO-SwU"/>
                             <constraint firstItem="K0V-3K-84i" firstAttribute="trailing" secondItem="lPK-Rd-awg" secondAttribute="trailing" constant="20" id="n0u-ZH-CTj"/>
                             <constraint firstItem="uYs-LV-wgf" firstAttribute="top" secondItem="FKD-hZ-Yet" secondAttribute="bottom" constant="80" id="p7C-jl-M3C"/>
+                            <constraint firstItem="3kF-Ga-bGx" firstAttribute="top" secondItem="4EI-kh-lCM" secondAttribute="bottom" constant="18" id="tMW-cj-2H5"/>
                             <constraint firstItem="QdD-ew-bCa" firstAttribute="top" secondItem="uYs-LV-wgf" secondAttribute="bottom" constant="20" id="tUq-OS-zE2"/>
                             <constraint firstItem="f02-zp-CG1" firstAttribute="top" secondItem="QdD-ew-bCa" secondAttribute="bottom" constant="20" id="wDI-Q3-nxG"/>
+                            <constraint firstItem="4EI-kh-lCM" firstAttribute="leading" secondItem="K0V-3K-84i" secondAttribute="leading" constant="177" id="ygX-df-S5h"/>
                             <constraint firstItem="K0V-3K-84i" firstAttribute="trailing" secondItem="z5N-2C-C3W" secondAttribute="trailing" constant="20" id="z2d-tu-WDJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K0V-3K-84i"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="4EI-kh-lCM" id="wYi-Ne-Qpu"/>
                         <outlet property="emailTextField" destination="lPK-Rd-awg" id="6lf-Lj-KPB"/>
                         <outlet property="nameTextField" destination="QdD-ew-bCa" id="2ux-RQ-xSS"/>
                         <outlet property="passwordTextField" destination="z5N-2C-C3W" id="OBB-H1-BXh"/>

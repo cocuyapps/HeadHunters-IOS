@@ -15,16 +15,22 @@ class SignUpViewController: UIViewController{
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var ref: DatabaseReference!
     override func viewDidLoad() {
+        passwordTextField.isSecureTextEntry = true
         ref = Database.database().reference()
     }
 
     
     @IBAction func signUpAction(_ sender: AnyObject) {
+        //Loading animation starts
+        self.activityIndicator.startAnimating()
         if passwordTextField.text == "" && emailTextField.text == ""{
             print("esta vacio")
+            //Loading animation stops
+            self.activityIndicator.stopAnimating()
         }
         else{
             print("no esta vacio")
@@ -36,16 +42,17 @@ class SignUpViewController: UIViewController{
                     print("sin errores")
                     if let level0 = self.storyboard!.instantiateViewController(withIdentifier: "LogIn") as? UIViewController{
                         self.present(level0, animated: true, completion: nil)
+                        //Loading animation stops
+                        self.activityIndicator.stopAnimating()
                     }
                 }
                 else{
                     print("con errores")
                     print(error?.localizedDescription ?? "firebase ta cagado")
-                    
+                    //Loading animation stops
+                    self.activityIndicator.stopAnimating()
                 }
             }
         }
     }
-    
-    
 }
