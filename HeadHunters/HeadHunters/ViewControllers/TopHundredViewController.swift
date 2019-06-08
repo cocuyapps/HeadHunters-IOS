@@ -47,12 +47,11 @@ class TopHundredViewControllerController: UICollectionViewController {
     
     var albums: [Album] = [Album]()
     var currentRow = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         HeadHuntersApi.getAlbums(responseHandler: handleResponse,
                                  errorHandler: handleError, genre: "")
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,6 +81,7 @@ class TopHundredViewControllerController: UICollectionViewController {
     }
     
     
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albums.count
     }
@@ -90,6 +90,11 @@ class TopHundredViewControllerController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AlbumCell
         
         // Configure the cell
+        cell.layer.shadowColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.7).cgColor
+        cell.layer.shadowRadius = 1
+        cell.layer.shadowOpacity = 0.6
+        cell.clipsToBounds = false
+        cell.layer.zPosition = 10
         cell.update(from: albums[indexPath.row])
         return cell
     }
