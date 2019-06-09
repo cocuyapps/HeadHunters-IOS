@@ -13,4 +13,11 @@ struct Song: Codable {
     var title: String?
     var albumArtUrl: String?
     var audioUrl: String?
+    
+    init(artist: String, title: String, albumArtUrl: String, audioUrl: String) {
+        self.artist = artist
+        self.title = title
+        self.albumArtUrl = albumArtUrl
+        self.audioUrl = audioUrl
+    }
 }
