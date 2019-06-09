@@ -21,6 +21,29 @@ struct Album: Codable {
     var description: String?
     var liked: Int?
     
+    init(title: String,
+        artist: String,
+        url: String,
+        thumbnail_image: String,
+        image: String,
+        songs: Array<Song>,
+        genre: String,
+        likes: Int,
+        description: String,
+        liked: Int) {
+        self.title = title
+        self.artist = artist
+        self.url = url
+        self.thumbnail_image = thumbnail_image
+        self.image = image
+        self.songs = songs
+        self.genre = genre
+        self.likes = likes
+        self.description = description
+        self.liked = liked
+        
+    }
+    
     var isFavorite: Bool {
         get {
             return HeadHuntersStore.shared.isFavorite(album: self)

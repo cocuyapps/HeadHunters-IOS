@@ -583,18 +583,68 @@
         <!--My Playlist-->
         <scene sceneID="TUu-sI-9s0">
             <objects>
-                <viewController id="3Hm-Qu-QAR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZnM-Jp-CRg">
+                <viewController id="3Hm-Qu-QAR" customClass="PlayListViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Sha-mM-4jn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uZj-Dg-JSg"/>
-                    </view>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yb5-Hl-XlB">
+                            <size key="itemSize" width="175" height="175"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayListCell" id="ziv-KG-zPj" customClass="PlayListCell" customModule="HeadHunters" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IIE-cn-xXr">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="142"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="142" id="gxd-Jc-oFY"/>
+                                                <constraint firstAttribute="width" constant="175" id="wFK-54-buk"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m9-tp-FcH">
+                                            <rect key="frame" x="20" y="147" width="135" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="KDE-SP-K1G"/>
+                                                <constraint firstAttribute="width" constant="175" id="oEC-Ok-hGi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstItem="IIE-cn-xXr" firstAttribute="leading" secondItem="ziv-KG-zPj" secondAttribute="leading" id="L8R-3r-wai"/>
+                                    <constraint firstItem="IIE-cn-xXr" firstAttribute="top" secondItem="ziv-KG-zPj" secondAttribute="top" id="MRx-s2-Bes"/>
+                                    <constraint firstItem="0m9-tp-FcH" firstAttribute="leading" secondItem="ziv-KG-zPj" secondAttribute="leading" id="Qy8-Qk-cBh"/>
+                                    <constraint firstAttribute="bottom" secondItem="0m9-tp-FcH" secondAttribute="bottom" constant="7" id="XxC-Le-KzU"/>
+                                    <constraint firstAttribute="trailing" secondItem="IIE-cn-xXr" secondAttribute="trailing" id="hKk-VH-XAI"/>
+                                    <constraint firstItem="0m9-tp-FcH" firstAttribute="top" secondItem="IIE-cn-xXr" secondAttribute="bottom" constant="5" id="i2r-GL-bWj"/>
+                                    <constraint firstItem="0m9-tp-FcH" firstAttribute="top" secondItem="IIE-cn-xXr" secondAttribute="bottom" constant="5" id="sPN-0e-xui"/>
+                                    <constraint firstAttribute="trailing" secondItem="0m9-tp-FcH" secondAttribute="trailing" id="tdk-Au-SNE"/>
+                                </constraints>
+                                <size key="customSize" width="175" height="175"/>
+                                <connections>
+                                    <outlet property="albumImageView" destination="IIE-cn-xXr" id="zOK-UZ-5sW"/>
+                                    <outlet property="titleLabel" destination="0m9-tp-FcH" id="g6U-vu-1IT"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
                     <navigationItem key="navigationItem" title="My Playlist" id="frQ-O1-zMK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1r-Qc-jnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="896"/>
+            <point key="canvasLocation" x="1332" y="895.50224887556226"/>
         </scene>
         <!--Playlist-->
         <scene sceneID="OhH-X2-Iu6">
