@@ -63,6 +63,7 @@ class PlayListViewController: UICollectionViewController {
             
                 let album = Album(title: title, artist: artist, url: url, thumbnail_image: thumbnail_image, image: image, songs: self.songs, genre: genre, likes: likes, description: description, liked: liked)
                 self.albums.append(album)
+                self.songs = [Song]()
                 self.collectionView.reloadData()
             }
         }
@@ -95,15 +96,16 @@ class PlayListViewController: UICollectionViewController {
         return cell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showAlbum" {
-//            let destination = segue.destination as! AlbumDetailViewController
-//            destination.album = albums[currentRow]
-//        }
-//    }
-//
-//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        currentRow = indexPath.item
-//        performSegue(withIdentifier: "showAlbum", sender: self)
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(albums[currentRow])
+        if segue.identifier == "showMediaPlayer" {
+            let destination = segue.destination as! MediaPlayerViewController
+            destination.album = albums[currentRow]
+        }
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentRow = indexPath.item
+        performSegue(withIdentifier: "showMediaPlayer", sender: self)
+    }
 }
