@@ -10,7 +10,6 @@ import UIKit
 
 class AlbumDetailViewController: UIViewController {
     var album: Album?
-    var isFavorite = false
     
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

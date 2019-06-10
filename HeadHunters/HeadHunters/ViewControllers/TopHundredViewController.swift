@@ -86,8 +86,6 @@ class TopHundredViewControllerController: UICollectionViewController {
         return 1
     }
     
-    
-    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return albums.count
     }
