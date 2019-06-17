@@ -8,12 +8,12 @@
 
 import UIKit
 import os
+import Firebase
 
 private let reuseIdentifier = "Cell"
 
 class AlbumCell: UICollectionViewCell {
     
-
     @IBOutlet weak var artistLabel: UILabel!
     
     @IBOutlet weak var albumLabel: UILabel!
@@ -24,7 +24,13 @@ class AlbumCell: UICollectionViewCell {
     
     @IBOutlet weak var favoriteImageView: UIImageView!
     
-    func update(from album: Album) {
+    var referenfe: DatabaseReference!
+    
+    var currentAlbum: Album!
+    
+    var songs = [[String:String]]()
+    
+    func update(from album: Album, ref: DatabaseReference) {
         thumbnailImageView.setImage(
             fromUrlString: album.thumbnail_image!,
             withDefaultImage: "no-image-available",
@@ -40,10 +46,44 @@ class AlbumCell: UICollectionViewCell {
         albumLabel.text = album.title
 
         favoriteImageView.setImage(fromAsset: "heartblank")
+        
+        referenfe = ref
+        
+        currentAlbum = album
     }
     
     @IBAction func addToPlaylist(_ sender: UIButton) {
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        let newAlbum = self.referenfe?.child("User").child(userID).child("albums").childByAutoId()
         
+        for song in currentAlbum!.songs! {
+            self.songs.append([
+                "artist": song.artist!,
+                "title": song.title!,
+                "albumArtUrl": song.albumArtUrl!,
+                "audioUrl": song.audioUrl!
+            ])
+        }
+        
+        let albumObject = [
+            "title": currentAlbum!.title as Any,
+            "artist": currentAlbum!.artist as Any,
+            "url": currentAlbum!.url as Any,
+            "thumbnail_image": currentAlbum!.thumbnail_image as Any,
+            "image": currentAlbum!.image as Any,
+            "genre": currentAlbum!.genre as Any,
+            "likes": currentAlbum!.likes as Any,
+            "description": currentAlbum!.description as Any,
+            "liked": currentAlbum!.liked as Any,
+            "songs": self.songs as Any
+        ]
+        newAlbum?.setValue(albumObject, withCompletionBlock: { error, ref in
+            if error == nil {
+                print("good")
+            } else {
+                //handle error
+            }
+        })
     }
     
 }
@@ -53,11 +93,13 @@ class TopHundredViewControllerController: UICollectionViewController {
     var albums: [Album] = [Album]()
     var currentRow = 0
     var genre = ""
+    var ref: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         HeadHuntersApi.getAlbums(responseHandler: handleResponse,
                                  errorHandler: handleError, genre: genre)
+        ref = Database.database().reference()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -99,7 +141,7 @@ class TopHundredViewControllerController: UICollectionViewController {
         cell.layer.shadowOpacity = 0.6
         cell.clipsToBounds = false
         cell.layer.zPosition = 10
-        cell.update(from: albums[indexPath.row])
+        cell.update(from: albums[indexPath.row], ref: ref)
         return cell
     }
     

@@ -48,9 +48,7 @@ class PlayListViewController: UICollectionViewController {
                 let thumbnail_image = dict["thumbnail_image"] as! String
                 let image = dict["image"] as! String
                 let genre = dict["genre"] as! String
-                let likes = dict["likes"] as! Int
                 let description = dict["description"] as! String
-                let liked = dict["liked"] as! Int
                 let songs = dict["songs"] as! [[String:Any]]
                 for song in songs {
                     let artist2 = song["artist"] as! String
@@ -61,7 +59,7 @@ class PlayListViewController: UICollectionViewController {
                     self.songs.append(song)
                 }
             
-                let album = Album(title: title, artist: artist, url: url, thumbnail_image: thumbnail_image, image: image, songs: self.songs, genre: genre, likes: likes, description: description, liked: liked)
+                let album = Album(title: title, artist: artist, url: url, thumbnail_image: thumbnail_image, image: image, songs: self.songs, genre: genre, likes: 0, description: description, liked: 0)
                 self.albums.append(album)
                 self.songs = [Song]()
                 self.collectionView.reloadData()
