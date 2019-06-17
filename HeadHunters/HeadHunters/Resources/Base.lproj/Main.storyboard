@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZXq-YI-lfM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZXq-YI-lfM">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -195,12 +195,12 @@
         <scene sceneID="qCS-5z-Ve8">
             <objects>
                 <viewController title="Album Detail" id="nC3-fp-8Zb" userLabel="Album Detail" customClass="AlbumDetailViewController" customModule="HeadHunters" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uei-7q-Gwe">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="uei-7q-Gwe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nna-uv-TOQ">
-                                <rect key="frame" x="16" y="105" width="382" height="229"/>
+                                <rect key="frame" x="16" y="105" width="343" height="229"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="229" id="Vf1-pS-mwQ"/>
                                     <constraint firstAttribute="width" constant="343" id="xFQ-dB-P0m"/>
@@ -227,7 +227,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-Fx-jBH">
-                                <rect key="frame" x="74" y="405" width="324" height="21"/>
+                                <rect key="frame" x="74" y="405" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="1Av-Ne-HbT"/>
                                     <constraint firstAttribute="height" constant="21" id="VEi-N4-HkE"/>
@@ -237,7 +237,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua7-ot-oqP">
-                                <rect key="frame" x="74" y="366" width="324" height="21"/>
+                                <rect key="frame" x="74" y="366" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="6uR-ay-LhJ"/>
                                     <constraint firstAttribute="height" constant="21" id="FS0-g5-s4L"/>
@@ -944,7 +944,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7zk-Fu-iFK" customClass="ArtistCell" customModule="HeadHunters" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Artist Cell" id="7zk-Fu-iFK" customClass="ArtistCell" customModule="HeadHunters" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

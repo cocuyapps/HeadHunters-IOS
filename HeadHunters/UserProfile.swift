@@ -15,4 +15,19 @@ struct UserProfile: Codable {
     var BandName: String?
     var UserName: String?
     var BandSample: String?
+    
+    init(bandDescription: String,
+         BandImgUrl: String,
+         BandMembers: String,
+         BandName: String,
+         UserName: String,
+         BandSample: String) {
+        self.bandDescription = bandDescription
+        self.BandImgUrl = BandImgUrl
+        self.BandMembers = BandMembers
+        self.BandName = BandName
+        self.UserName = UserName
+        self.BandSample = BandSample
+    }
+
 }

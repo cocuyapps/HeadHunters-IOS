@@ -17,44 +17,52 @@ class ArtistCell : UICollectionViewCell {
     
     @IBOutlet weak var artistNameLabel: UILabel!
     
-    func update(artistImage: String, artistName: String){
+    func update(from artist: UserProfile){
         artistImageView.setImage(
-            fromUrlString:artistImage,
-            withDefaultImage: "no-image-avaible",
-            withErrorImage: "no-image-avaible")
-        artistNameLabel.text = artistName
+            fromUrlString:artist.BandImgUrl!,
+            withDefaultImage: "nno-image-available",
+            withErrorImage: "no-image-available")
+        artistNameLabel.text = artist.BandName
     }
 }
 
 class ArtistViewController : UICollectionViewController {
     
+    var artists: [UserProfile] = [UserProfile]()
     var ref: DatabaseReference!
-    var image: String!
-    var name: String!
-    var count = 0
     var currentRow = 0
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         ref = Database.database().reference()
         getArtists()
     }
-    
     func getArtists(){
-        self.ref.child("User").queryOrdered(byChild: "BandName").observeSingleEvent(of: .value, with: {
-            DataSnapshot in
-            print(DataSnapshot.childrenCount)
-            for child in DataSnapshot.children.allObjects as! [DataSnapshot]{
-                print(child.value)
-                for value in child.children.allObjects {
-                    print(value)
+        self.ref.child("User").queryOrdered(byChild: "BandName").observe(.value) { (snapshot: DataSnapshot) in
+            for child in snapshot.children.allObjects as! [DataSnapshot] {
+                
+                if let dict = child.value as? [String: Any] {
+                    if(dict["BandName"] != nil){
+                        let bandDescription = dict["BandDescription"] as! String
+                        let bandImageUrl = dict["BandImgUrl"] as! String
+                        let bandMembers = dict["BandMembers"] as! String
+                        let bandName = dict["BandName"] as! String
+                        let bandSample = dict["BandSample"] as! String
+                        if(dict["UserName"] != nil){
+                            let userName = dict["UserName"] as! String
+                            let artist = UserProfile(bandDescription: bandDescription, BandImgUrl: bandImageUrl, BandMembers: bandMembers, BandName: bandName, UserName: userName, BandSample: bandSample)
+                            self.artists.append(artist)
+                            self.collectionView.reloadData()
+                        }
+                    }
                 }
             }
-        } )
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if count > 0 {
+        if artists.count > 0 {
             self.collectionView.reloadItems(at: [IndexPath(item: currentRow,
                                                            section: 0)])
         }
@@ -67,12 +75,13 @@ class ArtistViewController : UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return count
+        return artists.count
+
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtistCell
-        
+        cell.update(from: artists[indexPath.row])
         return cell
     }
     
