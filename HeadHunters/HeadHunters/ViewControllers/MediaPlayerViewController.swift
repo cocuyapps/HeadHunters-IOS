@@ -9,7 +9,7 @@
 import UIKit
 
 class MediaPlayerViewController: UIViewController {
-    var album: Album?
+    var songs: [Song] = [Song]()
     
     @IBOutlet weak var artImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -20,10 +20,10 @@ class MediaPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        artImageView.setImage(fromUrlString: (album?.songs![0].albumArtUrl)!,
+        artImageView.setImage(fromUrlString: (songs[0].albumArtUrl)!,
                                 withDefaultImage: "no-image-available",
                                 withErrorImage: "no-image-available")
-        titleLabel.text = album?.songs![0].title
-        artistLabel.text = album?.songs![0].artist
+        titleLabel.text = songs[0].title
+        artistLabel.text = songs[0].artist
     }
 }
