@@ -97,10 +97,9 @@ class PlayListViewController: UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(albums[currentRow])
         if segue.identifier == "showMediaPlayer" {
             let destination = segue.destination as! MediaPlayerViewController
-            destination.album = albums[currentRow]
+            destination.songs = albums[currentRow].songs!
         }
     }
 
