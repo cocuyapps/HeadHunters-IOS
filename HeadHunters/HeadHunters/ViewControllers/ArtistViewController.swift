@@ -84,7 +84,17 @@ class ArtistViewController : UICollectionViewController {
         cell.update(from: artists[indexPath.row])
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showArtist" {
+            let destination = segue.destination as! ArtistDetailViewController
+            destination.artist = artists[currentRow]
+        }
+    }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentRow = indexPath.item
+        performSegue(withIdentifier: "showArtist", sender: self)
+    }
     
 }
 
