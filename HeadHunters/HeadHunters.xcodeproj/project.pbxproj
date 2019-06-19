@@ -24,6 +24,7 @@
 		AF67D873229344260082C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D871229344260082C84F /* Main.storyboard */; };
 		AF67D878229344270082C84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF67D877229344270082C84F /* Assets.xcassets */; };
 		AF67D87B229344270082C84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF67D879229344270082C84F /* LaunchScreen.storyboard */; };
+		AF6AFB0422B9B4C500D569B1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6AFB0322B9B4C500D569B1 /* AVFoundation.framework */; };
 		AF96B0D522A314A20033BA67 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */; };
 		AF96B0D722A315F80033BA67 /* HeadHuntersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */; };
 		AF96B0D922A316660033BA67 /* FavoritesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96B0D822A316660033BA67 /* FavoritesEntity.swift */; };
@@ -57,6 +58,7 @@
 		AF67D877229344270082C84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF67D87A229344270082C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF67D87C229344270082C84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6AFB0322B9B4C500D569B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AF96B0D422A314A20033BA67 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		AF96B0D622A315F80033BA67 /* HeadHuntersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeadHuntersStore.swift; path = HeadHunters/ViewControllers/HeadHuntersStore.swift; sourceTree = SOURCE_ROOT; };
 		AF96B0D822A316660033BA67 /* FavoritesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavoritesEntity.swift; path = HeadHunters/ViewControllers/FavoritesEntity.swift; sourceTree = SOURCE_ROOT; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6AFB0422B9B4C500D569B1 /* AVFoundation.framework in Frameworks */,
 				737A41C4AD8FB2CD16C5356F /* Pods_HeadHunters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +145,7 @@
 		9D2A94DDE2B7D8F3CCC16079 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF6AFB0322B9B4C500D569B1 /* AVFoundation.framework */,
 				1B2FCB8035C047B029E4EA68 /* Pods_HeadHunters.framework */,
 			);
 			name = Frameworks;
