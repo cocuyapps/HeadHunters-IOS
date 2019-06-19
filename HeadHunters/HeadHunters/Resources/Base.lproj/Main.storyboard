@@ -774,7 +774,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cYx-To-5JT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.5304245353" green="0.28064557909999999" blue="0.79612267020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="xvh-Qa-aua" kind="relationship" relationship="viewControllers" id="Ige-Ib-dxw"/>
@@ -917,7 +917,7 @@
         <scene sceneID="Tgg-zj-nVQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xvh-Qa-aua" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="9VW-io-Uk5"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icons8-home-filled-50" id="9VW-io-Uk5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NiX-Yo-7m8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -936,7 +936,7 @@
         <scene sceneID="ddb-Rt-ccJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YMn-G4-TRw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="9nd-9G-jY2"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="icons8-search-filled-50" id="9nd-9G-jY2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IMe-qL-Agw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1159,7 +1159,7 @@
         <scene sceneID="OhH-X2-Iu6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ebW-4p-mpY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Playlist" id="aPt-Xw-ZWr"/>
+                    <tabBarItem key="tabBarItem" title="Playlist" image="icons8-playlist-50" id="aPt-Xw-ZWr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E7A-Wc-71T">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1314,7 +1314,7 @@
         <scene sceneID="mar-al-NLb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5GF-G5-myL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="gMA-dE-jkO"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-user-filled-50" id="gMA-dE-jkO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B7o-bc-Dxz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1333,7 +1333,7 @@
         <scene sceneID="7vc-Z4-qz4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wuz-VM-oBc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Artists" id="KXi-4w-tOH"/>
+                    <tabBarItem key="tabBarItem" title="Artists" image="icons8-recent-actors-filled-50" id="KXi-4w-tOH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7xY-wd-W5s">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1357,8 +1357,13 @@
         <image name="ic_play_arrow_white_48pt" width="48" height="48"/>
         <image name="ic_skip_next_white_36pt" width="36" height="36"/>
         <image name="ic_skip_previous_white_36pt" width="36" height="36"/>
+        <image name="icons8-home-filled-50" width="24" height="24"/>
+        <image name="icons8-playlist-50" width="24" height="24"/>
+        <image name="icons8-recent-actors-filled-50" width="25" height="25"/>
+        <image name="icons8-search-filled-50" width="25" height="25"/>
+        <image name="icons8-user-filled-50" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G16-dc-tlS"/>
+        <segue reference="DEk-70-btY"/>
     </inferredMetricsTieBreakers>
 </document>
