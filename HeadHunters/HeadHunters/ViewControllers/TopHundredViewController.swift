@@ -24,6 +24,8 @@ class AlbumCell: UICollectionViewCell {
     
     @IBOutlet weak var favoriteImageView: UIImageView!
     
+    @IBOutlet weak var addToPlaylist: UIButton!
+    
     var referenfe: DatabaseReference!
     
     var currentAlbum: Album!
@@ -47,6 +49,11 @@ class AlbumCell: UICollectionViewCell {
 
         favoriteImageView.setImage(fromAsset: "heartblank")
         
+//        if (!mostrarHabilitado) {
+//            addToPlaylist.isEnabled = false
+//            addToPlaylist.setTitle("Album agregado", for: .normal)
+//        }
+
         referenfe = ref
         
         currentAlbum = album
@@ -84,6 +91,9 @@ class AlbumCell: UICollectionViewCell {
                 //handle error
             }
         })
+        
+        addToPlaylist.isEnabled = false
+        addToPlaylist.setTitle("Album agregado", for: .normal)
     }
     
 }
@@ -94,11 +104,13 @@ class TopHundredViewControllerController: UICollectionViewController {
     var currentRow = 0
     var genre = ""
     var ref: DatabaseReference!
+    var dict: [Int:Bool] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         HeadHuntersApi.getAlbums(responseHandler: handleResponse,
                                  errorHandler: handleError, genre: genre)
+        
         ref = Database.database().reference()
     }
     
@@ -114,6 +126,9 @@ class TopHundredViewControllerController: UICollectionViewController {
             return
         }
         self.albums = albums
+        compareAlbums() { () in
+            print("videoUrl")
+        }
         self.collectionView.reloadData()
     }
     
@@ -155,5 +170,23 @@ class TopHundredViewControllerController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         currentRow = indexPath.item
         performSegue(withIdentifier: "showAlbum", sender: self)
+    }
+    
+    //verificar
+    func compareAlbums(completion: @escaping () -> Void) {
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        var i = 0
+        self.ref?.child("User").child(userID).child("albums").observe(.childAdded) {(snapshot: DataSnapshot) in
+            if let dict = snapshot.value as? [String: Any] {
+                for album in self.albums {
+                    if (album.title == dict["title"] as? String) {
+                        self.dict[i] = false
+                    } else {
+                        self.dict[i] = true
+                    }
+                }
+                i += 1
+            }
+        }
     }
 }

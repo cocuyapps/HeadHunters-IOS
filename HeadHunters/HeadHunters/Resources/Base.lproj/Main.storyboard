@@ -169,6 +169,7 @@
                                 </constraints>
                                 <size key="customSize" width="293" height="274"/>
                                 <connections>
+                                    <outlet property="addToPlaylist" destination="1Vs-Tg-Rrt" id="C8E-Zm-ew1"/>
                                     <outlet property="albumLabel" destination="dih-uE-nCn" id="JRH-uU-b7j"/>
                                     <outlet property="artistLabel" destination="9jI-ow-k7O" id="8lU-Uw-jrZ"/>
                                     <outlet property="bandImageView" destination="tfk-03-IMK" id="eFZ-SL-Nhw"/>
