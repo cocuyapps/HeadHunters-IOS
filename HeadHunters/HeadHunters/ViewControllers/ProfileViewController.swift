@@ -29,16 +29,15 @@ class ProfileViewController: UIViewController{
         let linkMusic = linkMusicTextField.text!
         let bandName = bandNameTextField.text!
         
-        if(bandDescription != "" && bandImgUrl != "" && bandMembers != "" && bandName != ""){
+        if(bandDescription != "" && bandImgUrl != "" && bandMembers != "" && bandName != "" && bandDescription != ""){
             let userID : String = (Auth.auth().currentUser?.uid)!
             
-            self.ref.child("User").child(userID).setValue(["BandDescription":bandDescription, "BandImgUrl":bandImgUrl, "BandMembers":bandMembers,"BandName":bandName,"BandSample":linkMusic  ], withCompletionBlock: { error, ref in
-                if error == nil {
-                    print("good")
-                } else {
-                    print(error as Any) //handle error
-                }
-            })
+            let userDB = self.ref.child("User").child(userID)
+            userDB.child("BandDescription").setValue(bandDescription)
+            userDB.child("BandImgUrl").setValue(bandImgUrl)
+            userDB.child("BandMembers").setValue(bandMembers)
+            userDB.child("BandName").setValue(bandName)
+            userDB.child("BandSample").setValue(linkMusic)
             print("registro")
 
         }else{
