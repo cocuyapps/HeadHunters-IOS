@@ -19,7 +19,25 @@ class ProfileViewController: UIViewController{
     var ref: DatabaseReference!
     override func viewDidLoad() {
         ref = Database.database().reference()
+        let userID : String = (Auth.auth().currentUser?.uid)!
+        self.ref.child("User").child(userID).observe(.value, with: { (snapshot) in
+            
+            if let value = snapshot.value  as? [String: Any]{
+                
+                if(value["BandName"] != nil){
+                    self.bandNameTextField.text = value["BandDescription"] as? String
+                    self.bandImageUrlTextField.text = value["BandImgUrl"] as? String
+                    self.bandDescriptionTextField.text = value["BandDescription"] as? String
+                    self.bandMembersTextField.text = value["BandMembers"] as? String
+                    self.linkMusicTextField.text = value["BandSample"] as? String
+                }
+                    
+            }
+            
+        })
+        
     }
+    
     
     
     @IBAction func saveButton(_ sender: AnyObject) {
