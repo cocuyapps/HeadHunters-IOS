@@ -16,7 +16,7 @@ class ArtistDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var membersLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var musicLabel: UILabel!
+    @IBOutlet weak var musicSourceTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,6 @@ class ArtistDetailViewController: UIViewController {
         titleLabel.text = "Band name: " + artist!.BandName!
         membersLabel.text = "Band members: " + artist!.BandMembers!
         descriptionLabel.text = "Description: " + artist!.bandDescription!
-        musicLabel.text = "Music source: " + artist!.BandSample!
+        musicSourceTextView.text = "Music source: " + artist!.BandSample!
     }
 }
